@@ -4,7 +4,7 @@ package com.eimc.booking;
  *      Domain class for Booking Object
  * */
 
-import com.eimc.User.User;
+import com.eimc.user.User;
 import com.eimc.car.Car;
 
 import java.time.LocalDateTime;
