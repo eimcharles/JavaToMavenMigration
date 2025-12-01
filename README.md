@@ -14,7 +14,7 @@ JavaToMavenMigration/
 │   │   ├── booking/       
 │   │   ├── car/
 │   │   └── User/
-│   └── Main.java                <-- entry point file
+│   └── Main.java                <-- entry point file (source code)
 └── JavaToMavenMigration.iml     <-- IntelliJ's module file (before Maven)
 ```
 --- 
@@ -24,11 +24,11 @@ JavaToMavenMigration/
 JavaToMavenMigration/
 ├── src/
 │   ├── main/
-│   │   ├── java/              <-- source code is here
+│   │   ├── java/              <-- entry point file (source code)
 │   │   └── resources/         <-- For configuration files (e.g., application.properties)
 │   └── test/
 │       ├── java/              <-- For unit tests (e.g., JUnit files)
-│       └── resources/         <-- For test-specific configuration
+│       └── resources/         <-- For test-specific configuration (Read only during 'mvn test')
 ├── target/                    <-- Created by Maven build goals (e.g., mvn install)
 └── pom.xml                    <-- The core Maven configuration file        
 ```
