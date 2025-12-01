@@ -1,4 +1,4 @@
-package com.eimc.User;
+package com.eimc.user;
 
 /**
  *      Domain class for User Object
