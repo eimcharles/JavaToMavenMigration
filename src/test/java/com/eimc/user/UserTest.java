@@ -1,3 +1,5 @@
+package com.eimc.user;
+
 
 /**
  *          UserTest: Unit Test Class
@@ -15,6 +17,5 @@
  */
 
 public class UserTest {
-
 
 }
