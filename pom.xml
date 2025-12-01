@@ -3,12 +3,34 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+    <!--
+
+        Section defines the identity of the project,
+        which uniquely identifies the artifact
+        any Maven repository.
+
+        modelVersion -> Project Object Model Version
+        groupId -> Organization name
+        artifactId -> Project name
+        version -> Project Version
+
+    -->
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.eimc</groupId>
     <artifactId>JavaToMavenMigration</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--
+
+        Define configuration variables
+        that can be used throughout the rest of
+        the project configuration.
+
+        Most common use is defining the
+        Java version for the Maven compiler.
+
+      -->
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
