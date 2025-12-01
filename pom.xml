@@ -35,7 +35,58 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+
+
+        <!--
+
+        Sets the character encoding for all
+        files used during the Maven build process to UTF-8.
+
+        -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
+        <!--
+
+        A core plugin in the Maven build system whose primary
+        role is to package the compiled project
+        code into a standard Java Archive (JAR) file
+
+        -->
+
+        <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+
     </properties>
+
+    <!--
+
+    Defines how Maven will build and package your application,
+    specifically focusing on creating an executable Java Archive (JAR) file.
+
+        Executable Artifact: In the context of Maven,
+        the main class is explicitly declared within the
+        configuration of the maven-jar-plugin (in the pom.xml)
+        using the mainClass tag, which tells the final
+        executable JAR file where to begin execution.
+
+    -->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven-jar-plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.eimc.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
