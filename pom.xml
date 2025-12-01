@@ -89,4 +89,75 @@
     </build>
 
 
+
+    <!--
+
+          Each library your project requires one `<dependency>` block
+
+          Inside, three mandatory tags uniquely identify the library:
+
+            <groupId>:      The organization that created the library (e.g., `org.junit.jupiter`).
+            <artifactId>:   The specific name of the library component (e.g., `junit-jupiter-api`).
+            <version>:      The specific release number you want to use (e.g., `5.10.1`).
+
+            The <scope>test</scope> Tag
+
+            This tag is crucial for testing dependencies:
+
+            test scope:
+
+            Tells Maven that this library is
+            only needed for compiling and running code
+            located in your **`src/test/java`** directory.
+
+            Result:
+
+            The JUnit libraries will not be included in your final
+            executable JAR file (`JavaToMavenMigration-1.0-SNAPSHOT.jar`)
+            keeping your application artifact small and clean.
+
+    -->
+
+    <dependencies>
+
+        <!--
+
+        Two dependencies are the core
+        components of the JUnit 5 testing framework.
+
+        1. junit-jupiter-api (The Writer's)
+
+        The API (Application Programming Interface)
+        component provides all the basic building blocks
+        and annotations you use directly in your Java test code.
+
+        -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--
+
+         1. junit-jupiter-engine (The Runner)
+
+        The Engine component is the implementation
+        that handles the runtime execution
+        of the tests.
+
+        It's the mechanism that Maven (via the Surefire Plugin) uses to
+        discover and execute the test methods marked with @Test.
+
+        -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
 </project>
