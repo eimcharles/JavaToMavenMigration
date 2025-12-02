@@ -5,9 +5,9 @@
 
     <!--
 
-        Section defines the identity of the project,
-        which uniquely identifies the artifact
-        any Maven repository.
+        The section defines the identity of the project,
+        which uniquely identifies the artifact of
+        any maven repository.
 
         modelVersion -> Project Object Model Version
         groupId -> Organization name
@@ -15,7 +15,6 @@
         version -> Project Version
 
     -->
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.eimc</groupId>
     <artifactId>JavaToMavenMigration</artifactId>
@@ -23,7 +22,7 @@
 
     <!--
 
-        Define configuration variables
+        The properties section defines configuration variables
         that can be used throughout the rest of
         the project configuration.
 
@@ -31,7 +30,6 @@
         Java version for the Maven compiler.
 
       -->
-
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
@@ -39,7 +37,7 @@
 
         <!--
 
-        Sets the character encoding for all
+        This defines and sets the character encoding for all
         files used during the Maven build process to UTF-8.
 
         -->
@@ -48,19 +46,19 @@
 
         <!--
 
-        A core plugin in the Maven build system whose primary
+        This defines a core plugin in
+        the Maven build system whose primary
         role is to package the compiled project
         code into a standard Java Archive (JAR) file
 
         -->
-
         <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
 
     </properties>
 
     <!--
 
-    Defines how Maven will build and package your application,
+    The build tag defines how Maven will build and package the application,
     specifically focusing on creating an executable Java Archive (JAR) file.
 
         Executable Artifact: In the context of Maven,
@@ -70,7 +68,6 @@
         executable JAR file where to begin execution.
 
     -->
-
     <build>
         <plugins>
             <plugin>
@@ -92,29 +89,29 @@
 
     <!--
 
-          Each library your project requires one `<dependency>` block
+          The <dependencies> tag acts as the container
+          for one or more individual <dependency>` block.
 
-          Inside, three mandatory tags uniquely identify the library:
+          Each individual <dependency> block contains
+          three mandatory tags that uniquely identify the 'library':
 
             <groupId>:      The organization that created the library (e.g., `org.junit.jupiter`).
             <artifactId>:   The specific name of the library component (e.g., `junit-jupiter-api`).
             <version>:      The specific release number you want to use (e.g., `5.10.1`).
 
-            The <scope>test</scope> Tag
+            <scope>test</scope>:
 
-            This tag is crucial for testing dependencies:
-
-            test scope:
+            This tag is crucial for testing dependencies
 
             Tells Maven that this library is
             only needed for compiling and running code
-            located in your **`src/test/java`** directory.
+            located in your src/test/java directory.
 
             Result:
 
             The JUnit libraries will not be included in your final
             executable JAR file (`JavaToMavenMigration-1.0-SNAPSHOT.jar`)
-            keeping your application artifact small and clean.
+            keeping the application artifact small and clean.
 
     -->
 
@@ -122,14 +119,14 @@
 
         <!--
 
-        Two dependencies are the core
+        Two dependencies are part of the core
         components of the JUnit 5 testing framework.
 
         1. junit-jupiter-api (The Writer's)
 
         The API (Application Programming Interface)
         component provides all the basic building blocks
-        and annotations you use directly in your Java test code.
+        and annotations to use directly in the Java test code.
 
         -->
         <dependency>
@@ -147,7 +144,7 @@
         that handles the runtime execution
         of the tests.
 
-        It's the mechanism that Maven (via the Surefire Plugin) uses to
+        The mechanism that Maven (via the Surefire Plugin) uses to
         discover and execute the test methods marked with @Test.
 
         -->

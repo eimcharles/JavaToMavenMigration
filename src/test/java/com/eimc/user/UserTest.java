@@ -7,8 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  *          UserTest: Unit Test Class
+ *
  *          Purpose: This class is responsible for testing the functionality of the
- *          'User.java' production class (which should reside in src/main/java/com/eimc).
+ *          'User.java' production class (reside in src/main/java/com/eimc/user).
  *
  *          Naming Convention:
  *          - The name 'UserTest' adheres to the standard Maven/JUnit convention (ProductionClassName + Test).
@@ -16,8 +17,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  *            discovers and executes all classes ending in 'Test.java' during the 'mvn test' goal.
  *
  *          Location:
- *          - This file must be located in the src/test/java directory structure
- *          (e.g., src/test/java/com/eimc/UserTest.java) to be processed by Maven.
+ *          - This file must be located in the src/test/java/com/eimc/user directory structure
+ *          (e.g., src/test/java/com/eimc/user/UserTest.java) to be processed by Maven.
  */
 
 public class UserTest {
@@ -27,7 +28,6 @@ public class UserTest {
     private static final String TEST_LAST_NAME = "Eimer";
 
     /**
-     *
      *          @Test
      *
      *          Annotation is a marker that
@@ -43,15 +43,13 @@ public class UserTest {
 
         /**
          *      The assertEquals static method (provided by the junit-jupiter-api dependency)
-         *      verifies that the 'expected' value (constant TEST_UUID) is identical to the 'actual'
-         *      value returned by the user.getUserId() method.
+         *      verifies that the 'expected' values are identical to the 'actual'
+         *      values passed in the method:
          *
          *      assertEquals(expected, actual, message);
          *
-         *      If they are not identical, the test fails
-         *      and prints the provided message.
+         *      If they are not identical, the test fails and prints the provided message.
          */
-
 
         assertEquals(TEST_UUID, user.getUserId(), "User ID must match the ID passed to the constructor.");
         assertEquals(TEST_NAME, user.getName(), "Name must match the name passed to the constructor.");
