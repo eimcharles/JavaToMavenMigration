@@ -6,29 +6,56 @@
 
 #### Initial File Structure: 
 ```
-
 JavaToMavenMigration/
-├── .idea/                       <-- IntelliJ's project metadata
-├── src/                         <-- The single source folder
-│   ├── com.eimc/                <-- root package
+├── .idea/                       IntelliJ's project metadata
+├── src/                         Single source folder
+│   ├── com.eimc/                Root package
 │   │   ├── booking/       
 │   │   ├── car/
 │   │   └── User/
-│   └── Main.java                <-- entry point file (source code)
-└── JavaToMavenMigration.iml     <-- IntelliJ's module file (before Maven)
+│   └── Main.java                Entry point file (source code) - Contains the main() method for application execution.
+├── README.MD 
+└── JavaToMavenMigration.iml     IntelliJ's module file (before Maven)
 ```
 --- 
 
 #### Maven File Structure: 
 ```
 JavaToMavenMigration/
-├── src/
-│   ├── main/
-│   │   ├── java/              <-- entry point file (source code)
-│   │   └── resources/         <-- For configuration files (e.g., application.properties)
-│   └── test/
-│       ├── java/              <-- For unit tests (e.g., JUnit files)
-│       └── resources/         <-- For test-specific configuration (Read only during 'mvn test')
-├── target/                    <-- Created by Maven build goals (e.g., mvn install)
-└── pom.xml                    <-- The core Maven configuration file        
+├── .idea/                                     IntelliJ's project metadata.
+├── src/                                       The main container for all source code and resources.
+│   ├── main/                                  Contains production code and resources that will be packaged into the final JAR/application.
+│   │   ├── java/                              Root directory for all production Java source files (must contain the package folders).
+│   │   │   └── com/
+│   │   │       └── eimc/                      Root package for the organization/project.
+│   │   │           ├── booking/
+│   │   │           │    └── Booking.java
+│   │   │           │      
+│   │   │           ├── user/
+│   │   │           │     └── User.java
+│   │   │           │        
+│   │   │           ├── car/
+│   │   │           │   ├── Car.java
+│   │   │           │   ├── Brand.java
+│   │   │           │   └── FuelType.java
+│   │   │           │
+│   │   │           └── Main.java              Entry point file (Package: com.eimc) - Contains the main() method for application execution.
+│   │   │ 
+│   │   │
+│   │   └── resources/                         For application configuration files (e.g., application.properties)
+│   │
+│   │             
+│   └── test/                                  Contains all code and resources used only for testing
+│       ├── java/                              Root directory for all JUnit test source files.
+│       │   └── com/
+│       │       └── eimc/
+│       │           └── user/
+│       │               └── UserTest.java      Unit test class for User object (Mirrors production package)
+│       │
+│       └── resources/                         For test-specific configuration (Read only during 'mvn test') 
+│   
+├── target/                                    Created by Maven build goals (Contains JARs, compiled classes, etc.)
+├── JavaToMavenMigration.iml                   IntelliJ's module file
+├── pom.xml                                    The core Maven configuration file
+└── README.MD                                         
 ```
