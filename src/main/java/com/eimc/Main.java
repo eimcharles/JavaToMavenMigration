@@ -22,6 +22,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println();
+        System.out.println("This is a Java to Maven Migration Program");
+        System.out.println("Running JAR file");
+        System.out.println("Execution finished");
+        System.out.println();
     }
 
 }
