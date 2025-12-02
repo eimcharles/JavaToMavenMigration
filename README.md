@@ -7,8 +7,8 @@
 #### Initial File Structure: 
 ```
 JavaToMavenMigration/
-├── src/                         Single source folder
-│   ├── com.eimc/                Root package
+├── src/                             Single source folder
+│   ├── com.eimc/                    Root package
 │   │   ├── booking/
 │   │   │      └── Booking.java
 │   │   │
@@ -20,21 +20,21 @@ JavaToMavenMigration/
 │   │        ├── Brand.java
 │   │        └── FuelType.java
 │   │  
-│   └── Main.java                Entry point file (source code) - Contains the main() method for application execution.
+│   └── Main.java                    Entry point file (source code) - Contains the main() method for application execution.
 │ 
 ├── README.MD 
-└── JavaToMavenMigration.iml     IntelliJ's module file (before Maven)
+└── JavaToMavenMigration.iml         IntelliJ's module file (before Maven)
 ```
 --- 
 
 #### Maven File Structure: 
 ```
 JavaToMavenMigration/
-├── src/                                       The main container for all source code and resources.
-│   ├── main/                                  Contains production code and resources that will be packaged into the final JAR/application.
-│   │   ├── java/                              Root directory for all production Java source files (must contain the package folders).
+├── src/                                           The main container for all source code and resources.
+│   ├── main/                                      Contains production code and resources that will be packaged into the final JAR/application.
+│   │   ├── java/                                  Root directory for all production Java source files (must contain the package folders).
 │   │   │   └── com/
-│   │   │       └── eimc/                      Root package for the organization/project.
+│   │   │       └── eimc/                          Root package for the organization/project.
 │   │   │           ├── booking/
 │   │   │           │    └── Booking.java
 │   │   │           │      
@@ -46,22 +46,26 @@ JavaToMavenMigration/
 │   │   │           │   ├── Brand.java
 │   │   │           │   └── FuelType.java
 │   │   │           │
-│   │   │           └── Main.java              Entry point file (Package: com.eimc) - Contains the main() method for application execution.
+│   │   │           └── Main.java                  Entry point file (Package: com.eimc) - Contains the main() method for application execution.
 │   │   │ 
 │   │   │
-│   │   └── resources/                         For application configuration files (e.g., application.properties)
+│   │   └── resources/                             For application configuration files (e.g., application.properties)
 │   │
 │   │             
-│   └── test/                                  Contains all code and resources used only for testing
-│       ├── java/                              Root directory for all JUnit test source files.
+│   └── test/                                      Contains all code and resources used only for testing
+│       ├── java/                                  Root directory for all JUnit test source files.
 │       │   └── com/
 │       │       └── eimc/
+│       │           ├── booking/
+│       │           │    └── BookingTest.java      Unit test class for Booking object (Mirrors production package)
+│       │           ├── car/
+│       │           │    └── CarTest.java          Unit test class for Car object (Mirrors production package)
 │       │           └── user/
-│       │               └── UserTest.java      Unit test class for User object (Mirrors production package)
+│       │                └── UserTest.java         Unit test class for User object (Mirrors production package)
 │       │
-│       └── resources/                         For test-specific configuration (Read only during 'mvn test') 
+│       └── resources/                             For test-specific configuration (Read only during 'mvn test') 
 │   
-├── JavaToMavenMigration.iml                   IntelliJ's module file
-├── pom.xml                                    The core Maven configuration file
+├── JavaToMavenMigration.iml                       IntelliJ's module file
+├── pom.xml                                        The core Maven configuration file
 └── README.MD                                         
 ```
