@@ -9,10 +9,18 @@
 JavaToMavenMigration/
 ├── src/                         Single source folder
 │   ├── com.eimc/                Root package
-│   │   ├── booking/       
-│   │   ├── car/
-│   │   └── User/
+│   │   ├── booking/
+│   │   │        └── Booking.java
+│   │   ├── user/
+│   │   │    └── User.jav
+│   │   │
+│   │   └── car/
+│   │        ├── Car.java
+│   │        ├── Brand.java
+│   │        └── FuelType.java
+│   │  
 │   └── Main.java                Entry point file (source code) - Contains the main() method for application execution.
+│ 
 ├── README.MD 
 └── JavaToMavenMigration.iml     IntelliJ's module file (before Maven)
 ```
