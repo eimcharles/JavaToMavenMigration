@@ -7,7 +7,6 @@
 #### Initial File Structure: 
 ```
 JavaToMavenMigration/
-├── .idea/                       IntelliJ's project metadata
 ├── src/                         Single source folder
 │   ├── com.eimc/                Root package
 │   │   ├── booking/       
@@ -22,7 +21,6 @@ JavaToMavenMigration/
 #### Maven File Structure: 
 ```
 JavaToMavenMigration/
-├── .idea/                                     IntelliJ's project metadata.
 ├── src/                                       The main container for all source code and resources.
 │   ├── main/                                  Contains production code and resources that will be packaged into the final JAR/application.
 │   │   ├── java/                              Root directory for all production Java source files (must contain the package folders).
@@ -54,7 +52,6 @@ JavaToMavenMigration/
 │       │
 │       └── resources/                         For test-specific configuration (Read only during 'mvn test') 
 │   
-├── target/                                    Created by Maven build goals (Contains JARs, compiled classes, etc.)
 ├── JavaToMavenMigration.iml                   IntelliJ's module file
 ├── pom.xml                                    The core Maven configuration file
 └── README.MD                                         
