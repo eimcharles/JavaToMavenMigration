@@ -10,7 +10,8 @@ JavaToMavenMigration/
 ├── src/                         Single source folder
 │   ├── com.eimc/                Root package
 │   │   ├── booking/
-│   │   │        └── Booking.java
+│   │   │      └── Booking.java
+│   │   │
 │   │   ├── user/
 │   │   │    └── User.jav
 │   │   │
