@@ -21,7 +21,7 @@ public class BookingTest {
             "Eimer");
 
     private final Car TEST_CAR = new Car(
-            "ABC 123",
+            "123_1",
             new BigDecimal("79"),
             Brand.BMW,
             FuelType.GASOLINE);

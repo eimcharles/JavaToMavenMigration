@@ -1,6 +1,9 @@
 package com.eimc;
 
 /**
+ *
+ *      Main -  Main Class comments:
+ *
  *      The primary role of the Main class in
  *      this Maven project is to serve as the
  *      single, defined entry point

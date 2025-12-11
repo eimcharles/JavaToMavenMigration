@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- *          UserTest: Unit Test Class
+ *          UserTest -  Unit Test Class comments:
  *
  *          Purpose: This class is responsible for testing the functionality of the
- *          'User.java' production class (reside in src/main/java/com/eimc/user).
+ *          'User.java' class.
  *
  *          Naming Convention:
  *          - The name 'UserTest' adheres to the standard Maven/JUnit convention (ProductionClassName + Test).
@@ -19,11 +19,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  *          Location:
  *          - This file must be located in the src/test/java/com/eimc/user directory structure
  *          (e.g., src/test/java/com/eimc/user/UserTest.java) to be processed by Maven.
+ *
+ *
  */
 
 public class UserTest {
 
-    private static final UUID TEST_UUID = UUID.fromString("11111111-1111-1111-1111-111111111111");
+    private static final UUID TEST_UUID = UUID.randomUUID();
     private static final String TEST_NAME = "Charles";
     private static final String TEST_LAST_NAME = "Eimer";
 
