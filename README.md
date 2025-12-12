@@ -8,7 +8,7 @@
 
 | File Name                                                                                                   
 |-------------------------|
-| [pom.xml](src/pom.xml)                                                    
+| [pom.xml](pom.xml)                                                    
                                                                                       
 ---                                                                           
 
