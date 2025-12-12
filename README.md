@@ -4,6 +4,14 @@
 
 --- 
 
+#### Important Files for Java to Maven Migration:
+
+| File Name                                                                                                   
+|-------------------------|
+| [pom.xml](src/pom.xml)                                                    
+                                                                                      
+---                                                                           
+
 #### Initial File Structure: 
 ```
 JavaToMavenMigration/
@@ -27,7 +35,7 @@ JavaToMavenMigration/
 ```
 --- 
 
-#### Maven File Structure: 
+#### File Structure after Maven Migration: 
 ```
 JavaToMavenMigration/
 ├── src/                                           The main container for all source code and resources.
@@ -69,3 +77,4 @@ JavaToMavenMigration/
 ├── pom.xml                                        The core Maven configuration file
 └── README.MD                                         
 ```
+
