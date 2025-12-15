@@ -2,6 +2,9 @@
 
 #### This repository serves as a working example demonstrating the process of converting a traditional Java project into a standardized, buildable Maven project.
 
+![Java](https://img.shields.io/badge/Java-21-007396?logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-4.0-C71A36?logo=apache-maven&logoColor=white)
+
 #### [Learning resource / certificate](learningResourceCertificate/Maven_Essentials_certificate.pdf)
 
 --- 
