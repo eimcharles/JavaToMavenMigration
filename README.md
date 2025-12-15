@@ -2,6 +2,8 @@
 
 #### This repository serves as a working example demonstrating the process of converting a traditional Java project into a standardized, buildable Maven project.
 
+#### [Learning resource / certificate](learningResourceCertificate/Maven_Essentials_certificate.pdf)
+
 --- 
 
 #### Important Files for Java to Maven Migration:
