@@ -5,7 +5,7 @@
 ![Java](https://img.shields.io/badge/Java-21-007396?logo=openjdk&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-4.0-C71A36?logo=apache-maven&logoColor=white)
 
-#### [Learning resource / certificate](learningResourceCertificate/Maven_Essentials_certificate.pdf)
+#### [Maven Learning resource / certificate](learningResourceCertificate/Maven_Essentials_certificate.pdf)
 
 --- 
 
