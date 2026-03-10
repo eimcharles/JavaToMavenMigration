@@ -17,7 +17,7 @@
     -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.eimc</groupId>
-    <artifactId>JavaToMavenMigration</artifactId>
+    <artifactId>maven-migration</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!--
